@@ -1,0 +1,8 @@
+#Convince Logic that it has been launched before as the current user
+defaults write ~/Library/Preferences/com.apple.logic10 MANPDNotFirstLaunch -bool true
+
+#Update the integer whenever the What's New panel goes beyond 24, as of October 2025 it is at 17
+defaults write ~/Library/Preferences/com.apple.logic10 RecentWhatsNewPanelVersion -int 24
+
+#Refresh the preference cash by killing the daemon
+killall cfprefsd
