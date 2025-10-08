@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Convince Logic that it has been launched before as the current user
 defaults write ~/Library/Preferences/com.apple.logic10 MANPDNotFirstLaunch -bool true
 
